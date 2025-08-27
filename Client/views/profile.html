@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <title>Profile</title>
+</head>
+<body>
+
+    <nav class="mainNav">
+        <header id="home">HOME</header>
+        <header id="reg">REGISTRATION</header>
+        <header id="prof" class="current">PROFILE</header>
+        <header id="log" class="login">LOG IN</header>
+    </nav>
+
+    <br><br>
+
+    <h1 class="pageHeader">Profile</h1>
+    <br><br>
+
+    <img src="/images/christmas.jpg" alt="writing on present" class="pageImage">
+    
+
+    <form id="pref">
+        <!-- get to display the number and email currently associated with the user
+         but still be editable. Will later autofill with necessary info-->
+         <label>Please choose how many upcoming holidays you would like to see </label>
+         <input type="number" min="1" max="4">
+        <br>
+        <input type="submit" onclick="Update()" value="Update">
+        <input type="button" value="Back" onclick="history.back()">
+    </form>
+
+    <script src="/js/global.js"></script>
+    <script src="/js/profile.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,18 @@
+[
+    {
+        "firstName":"admin", 
+        "lastName":"admin", 
+        "DOB":"01/01/2001",
+        "phoneNumber":"5555555555",
+        "email":"admin1@gmail.com",
+        "pass":"pass"
+    },
+    {
+        "firstName":"sigma", 
+        "lastName":"gyatt",
+        "DOB":"03/13/1982",
+        "phoneNumber":"6767677777", 
+        "email":"therizzler@yahoo.com", 
+        "pass":"yourenotevensigmavro"
+    }
+]

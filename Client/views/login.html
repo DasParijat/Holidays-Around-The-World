@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Log In</title>
+</head>
+
+<body>
+    <nav class="mainNav">
+        <header id="home">HOME</header>
+        <header id="reg">REGISTRATION</header>
+        <header id="prof">PROFILE</header>
+        <header id="log" class="current login">LOG IN</header>
+    </nav>
+    
+    <br><br>
+
+    <h1 class="pageHeader">Log In</h1>
+    <br><br>
+    
+    <img src="/images/flatearth.jpg" alt="don't ask" class="pageImage">
+
+    <!--the action is just a temporary thing cause we need to get it to check 
+    if email and pass are correct but atm we cant do that without the server-->
+    <form name="loginForm" id="loginForm" action="home.html">
+        <lable for="email">Email:</lable>
+        <input type="email" id="email" name="email" autocomplete="email">
+        <br></br>
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="pass" autocomplete="current-password">
+        <br><br>
+
+        <!--need to be able to verify that the email and password in the array
+        matches the one typed in here-->
+        <input type="submit" id="Submit" value="Submit" onsubmit="goHome()">
+    </form>
+
+    <div id="hiddenError">
+        Username and/or password were not found in our system.<br>
+        Please try again.
+    </div>
+    <div id="hiddenFound">
+        You are now logged in!
+    </div>
+
+    <p>
+        No account? Click <a href=registration.html>here</a> to sign up!
+    </p>
+    <script src="/js/global.js"></script>
+    <script src="/js/login.js"></script>
+</body>
+</html>

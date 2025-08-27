@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/registration.css">
+    <title>Registration</title>
+</head>
+<body>
+    
+    <nav class="mainNav">
+        <header id="home">HOME</header>
+        <header id="reg" class="current">REGISTRATION</header>
+        <header class="unclickableNav">PROFILE</header>
+        <!--removing id from profile here makes it unclickable-->
+        <header id="log" class="login">LOG IN</header>
+    </nav>
+
+    <br><br>
+    
+    <h1 class="pageHeader">Registration</h1>
+
+    <br><br>
+
+    <img src="/images/ramadanImage.jpeg" alt="ramadan image" class="pageImage">
+
+    <form name="reg_form" class="registration" id="regs">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="user" autocomplete="name" required>
+        <br></br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="user" autocomplete="family-name" required>
+        <br></br>
+
+        <label for="DOB">Date of Birth:</label>
+        <input type="date" id="DOB" name="user" autocomplete="bday-day" required>
+        <br></br>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="user" autocomplete="tel" required>
+        <br></br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="user" autocomplete="email" required>
+        <br></br>
+
+        <label for="newPass">Create Password:</label>
+        <input type="password" id="newPass" name="newPass" required>
+        <br></br>
+        <label for="confirmPass">Confirm Password:</label>
+        <input type="password" id="confirmPass" name="confirmPass" required>
+        <br></br>
+
+        
+        <input type="button" value="Back" onclick="history.back()">
+        <input type="reset" value="Reset" id="reset">
+        <input type="submit" onclick="storeInfo()" value="Submit">
+    </form>
+
+    <script src="/js/global.js"></script>
+    <script src="/js/registration.js"></script>
+</body>
+</html>

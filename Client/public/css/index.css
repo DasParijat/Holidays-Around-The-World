@@ -1,0 +1,26 @@
+/* Index CSS */
+
+/* Bobbing Fading animation */
+.fadeInText{
+    opacity:0;
+    font-size:xx-large;
+    animation:fadeIn 2s ease-in forwards, fadeOut 4s 2s ease-out forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes fadeIn{
+    100%{opacity: 1;}
+} 
+@keyframes fadeOut{
+    50%{opacity:1;}
+    100%{opacity:0;}
+}
+/*this is for the background image to not repeat and makes the text
+legible*/
+body{
+    background-image:url("/images/GoodEarthPic.jpg");
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    color:aliceblue;
+
+    text-align: center;}

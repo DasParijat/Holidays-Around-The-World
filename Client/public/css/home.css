@@ -1,0 +1,56 @@
+/* Home CSS */
+
+.holidayDiv {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.homeFooter {
+    position: relative;
+    bottom: -50px;
+    text-align: center;
+}
+
+img{
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    width:70%;
+    height:auto;
+}
+
+.holidayList, li {
+    list-style-type: none;
+}
+
+.holidayName {
+    font-weight: bold;
+}
+
+.holidayPost {
+    color: rgb(0, 0, 0);
+}
+
+.holidayPost table {
+    width: 30%; 
+    border-collapse: collapse; 
+    margin: 0 auto; 
+    background-color: rgb(223, 231, 250);
+}
+
+.holidayPost th, td {
+    border: 3px solid #000000; 
+    padding: 5px; 
+    text-align: left; 
+}
+
+.holidayPost td:nth-child(1), th:nth-child(1) {
+    width: 10%; 
+    background-color: rgb(140, 167, 224);
+}
+
+#dateHeader {
+    text-align: center;
+}
+
