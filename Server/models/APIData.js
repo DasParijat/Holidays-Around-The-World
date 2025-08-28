@@ -7,9 +7,8 @@ const express=require('express');
 const https=require('https');
 
 // Set up app & port #
-const app=express();
+const app = express();
 
-//get teh api data from online
 fetch('https://date.nager.at/api/v3/publicholidays/2022/US')
 .then(function(response) {
    return response.json();
