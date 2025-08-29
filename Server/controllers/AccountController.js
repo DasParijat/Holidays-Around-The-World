@@ -62,4 +62,3 @@ module.exports = {
     addNewUser,
     login
 };
-//we need to call profiles and get the info to display and login 

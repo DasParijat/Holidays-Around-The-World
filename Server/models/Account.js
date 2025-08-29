@@ -17,11 +17,6 @@ mongoose.connect('mongodb://localhost:27017/sampledatabase')
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('Connection failed', err));
 
-//const bodyParser= require('body-parser')
-
-//app.use(bodyParser.json());
-//app.use(express.static('public'));
-//app.use(express.json());
 
 // User schema, has all the required data for user
 const usersSchema = new mongoose.Schema({
@@ -32,7 +27,8 @@ const usersSchema = new mongoose.Schema({
     email:{type:String, required:true, unique: true},
     password:{type:String, required:true}
 });
-//before we save the user, we gonna run this
+
+// Before we save the user, we gonna run this
 usersSchema.pre('save', async function(next){
     try{
         //generate a salt with complexity 10
@@ -47,6 +43,7 @@ usersSchema.pre('save', async function(next){
         next(error);
     }
 });
+
 const Account = mongoose.model('Account', usersSchema);
 
 // for logging in

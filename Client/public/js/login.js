@@ -35,22 +35,3 @@ loginForm.addEventListener('submit', (event) => {
             // Handle errors (e.g., display an error message)
         });
 });
-
-
-/*function check(e){
-var user=document.getElementById("email").value;
-var pass=document.getElementById("pass").value;
-
-for(i=0; i<profileArray.length; i++){
-    var a=profileArray[i].email;
-    var b=profileArray[i].password;
-
-    if(a==user && b==pass){
-        window.location.href='home.html';
-    }
-    else{
-        document.getElementById("hiddenError").style.display="block";
-    }
-    console.log("wahoo");
-    e.preventDefault();
-}}*/
