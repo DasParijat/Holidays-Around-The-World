@@ -16,10 +16,6 @@ const app = express();
 
 var loggedIn = true;
 
-
-// encrypt our passwordssss
-//req.body.password= bcrypt.hashSync(req.body.password, 10);
-
 // we can now add people, yippee
 async function addNewUser(req, res) {
     console.log('Received registration request:', req.body);

@@ -97,7 +97,7 @@ function logState() {
     });
 }
 
-//run all dat stuff
+
 logNavChangeText()
 
 homeNavLink();
